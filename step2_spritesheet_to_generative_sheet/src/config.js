@@ -41,13 +41,12 @@ let layerConfigurations = [
     namePrefix: "", // Use to add a name to Metadata `name:`
     layersOrder: [
       { name: "Background" },
-      { name: "Landscape" },
-      {
-        name: "Ball",
-      },
-      {
-        name: "Hat",
-      },
+      { name: "Base" },
+      { name: "Clothes"},
+      { name: "eyes"},
+      { name: "Hand"},
+      { name: "Head"},
+      { name: "Mouth"},
     ],
   },
 ]

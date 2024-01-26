@@ -48,3 +48,5 @@ regenerate:
 
 html:
 	python3 generate_html/build.py
+rearrange:
+	python3 rearrange.py

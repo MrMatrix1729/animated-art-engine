@@ -90,20 +90,19 @@ jsonFiles.forEach((file) => {
     symbol: symbol,
     description: description,
     seller_fee_basis_points: royaltyFee,
-    image: `${editionCountFromFileName}.${outputType}`,
+    animation_url: `${editionCountFromFileName}.${outputType}`,
     ...(external_url !== "" && { external_url }),
+    image: `${editionCountFromFileName}.png`,
     attributes: jsonData.attributes,
     properties: {
-      edition: jsonData.edition,
       files: [
         {
           uri: `${editionCountFromFileName}.${outputType}`,
-          type: `image/${outputType}`,
+          type: `video/${outputType}`,
         },
       ],
-      category: `${outputType}`,
       creators: creators,
-      compiler: "Jalagar Animated Art Engine | qualifieddevs.io",
+      category: `video`,
     },
   };
   fs.writeFileSync(
